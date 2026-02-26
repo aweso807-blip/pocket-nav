@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Pocket Nav</title>
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Pocket Nav" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>Pocket Nav</h1>
+      <p class="sub">Right = 1 pulse, Left = 2 pulses, Off-route = long pulse</p>
+      <div class="controls">
+        <button id="setCurrentBtn">Use My Current Location</button>
+        <input id="destinationInput" type="text" placeholder="Destination (address/place)" />
+        <div id="suggestions" class="suggestions" aria-live="polite"></div>
+        <button id="routeBtn">Build Route</button>
+        <button id="startBtn" disabled>Start Pocket Navigation</button>
+        <button id="stopBtn" disabled>Stop</button>
+      </div>
+      <p id="status">Status: idle</p>
+      <p id="nextTurn">Next turn: n/a</p>
+      <p class="note">iPhone note: lock-screen/background navigation + haptics are restricted on web apps. This uses best-effort wake lock + fallback audio.</p>
+    </section>
+    <div id="map"></div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

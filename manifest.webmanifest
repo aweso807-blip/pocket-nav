@@ -1,0 +1,23 @@
+{
+  "name": "Pocket Nav",
+  "short_name": "PocketNav",
+  "description": "Turn-by-turn pocket navigation with haptic/audio cues.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%230f172a'/%3E%3Cpath d='M96 26 39 65v103h114V65z' fill='%2322d3ee'/%3E%3Cpath d='M70 121h19v31H70zm33-38h19v69h-19z' fill='%23020617'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%230f172a'/%3E%3Cpath d='M96 26 39 65v103h114V65z' fill='%2322d3ee'/%3E%3Cpath d='M70 121h19v31H70zm33-38h19v69h-19z' fill='%23020617'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
